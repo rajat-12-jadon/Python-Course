@@ -34,11 +34,15 @@ Files:
 
 ## 🚀 Repository Structure
 
+## 🚀 Repository Structure
+
+```text
 Python-Course/
 ├── Day01/
 │   ├── basics.py
 │   ├── operators.py
 │   ├── conditionals.py
 │   └── strings_type_conversions.py
+```
 
 More updates will be added as I continue my Python journey.
