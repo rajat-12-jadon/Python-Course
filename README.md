@@ -13,26 +13,40 @@ Topics Covered:
 * Python Basics
 * Variables and Data Types
 * Operators
-* Conditional Statements (`if`, `elif`, `else`)
+* Conditional Statements
 * Strings
 * Type Conversions
 
 Files:
 
-* `basics.py`
-* `operators.py`
-* `conditionals.py`
-* `strings_type_conversions.py`
+* basics.py
+* operators.py
+* conditionals.py
+* strings_type_conversions.py
+
+### ✅ Day 02
+
+Topics Covered:
+
+* For Loops
+* While Loops
+* Functions
+* Number Guessing Game
+
+Files:
+
+* forLoop.py
+* whileLoop.py
+* functions.py
+* guessANumberUsingWhileLoop.py
 
 ## 🎯 Learning Goals
 
 * Master Python fundamentals
 * Build practical projects
 * Strengthen problem-solving skills
-* Prepare for Data Structures & Algorithms
-* Explore AI/ML and Automation in the future
-
-## 🚀 Repository Structure
+* Learn advanced Python concepts
+* Build larger Python applications
 
 ## 🚀 Repository Structure
 
@@ -43,6 +57,20 @@ Python-Course/
 │   ├── operators.py
 │   ├── conditionals.py
 │   └── strings_type_conversions.py
+│
+├── Day02/
+│   ├── forLoop.py
+│   ├── whileLoop.py
+│   ├── functions.py
+│   └── guessANumberUsingWhileLoop.py
 ```
+
+## 📈 Progress
+
+* [x] Day 01 Completed
+* [x] Day 02 Completed
+* [ ] Day 03
+* [ ] Day 04
+* [ ] Day 05
 
 More updates will be added as I continue my Python journey.
