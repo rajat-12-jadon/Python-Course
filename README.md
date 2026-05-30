@@ -40,6 +40,20 @@ Files:
 * functions.py
 * guessANumberUsingWhileLoop.py
 
+### ✅ Day 03
+Topics Covered:
+- Lists
+- Dictionaries
+- Tuples
+- Sets
+- Deep Copy vs Shallow Copy
+
+Files:
+- list.py
+- dictionary.py
+- tuplesAndSets.py
+- deep_copy_vs_shallow_copy.md
+
 ## 🎯 Learning Goals
 
 * Master Python fundamentals
@@ -67,10 +81,10 @@ Python-Course/
 
 ## 📈 Progress
 
-* [x] Day 01 Completed
-* [x] Day 02 Completed
-* [ ] Day 03
-* [ ] Day 04
-* [ ] Day 05
+- [x] Day 01 Completed
+- [x] Day 02 Completed
+- [x] Day 03 Completed
+- [ ] Day 04
+- [ ] Day 05
 
 More updates will be added as I continue my Python journey.
