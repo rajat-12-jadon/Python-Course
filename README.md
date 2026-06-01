@@ -134,6 +134,40 @@ Features:
 
 ---
 
+### ✅ Day 05
+
+#### Topics Covered
+
+* Object-Oriented Programming (OOP)
+* Classes and Objects
+* Constructors (`__init__`)
+* Encapsulation
+* Abstraction
+* Inheritance
+* Polymorphism
+* Dunder Methods
+
+#### Practice Files
+
+* basicsOfOOP.py
+* encapsulation.py
+* abstraction.py
+* inheritance.py
+* polymorphism.py
+* dunderMethods.py
+
+#### Learning Outcome
+
+* Learned the fundamentals of Object-Oriented Programming.
+* Understood how classes and objects model real-world entities.
+* Learned encapsulation for data hiding and protection.
+* Used abstraction to hide implementation details.
+* Explored inheritance for code reusability.
+* Applied polymorphism for flexible and scalable code.
+* Learned how dunder methods customize object behavior in Python.
+
+---
+
 ## 🎯 Learning Goals
 
 * Master Python fundamentals
@@ -175,6 +209,13 @@ Python-Course/
 │   └── File_Manager_Project/
 │       ├── file_manager.py
 │       └── README.md
+├── Day05/
+│   ├── basicsOfOOP.py
+│   ├── encapsulation.py
+│   ├── abstraction.py
+│   ├── inheritance.py
+│   ├── polymorphism.py
+│   └── dunderMethods.py
 │
 └── README.md
 ```
@@ -185,7 +226,7 @@ Python-Course/
 * [x] Day 02 Completed
 * [x] Day 03 Completed
 * [x] Day 04 Completed
-* [ ] Day 05
+* [x] Day 05 Completed
 * [ ] Day 06
 
 More updates will be added as I continue my Python journey.
