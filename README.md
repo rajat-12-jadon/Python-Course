@@ -209,6 +209,7 @@ Python-Course/
 │   └── File_Manager_Project/
 │       ├── file_manager.py
 │       └── README.md
+|
 ├── Day05/
 │   ├── basicsOfOOP.py
 │   ├── encapsulation.py
@@ -216,6 +217,14 @@ Python-Course/
 │   ├── inheritance.py
 │   ├── polymorphism.py
 │   └── dunderMethods.py
+|
+├── Day06/
+│   ├── calculator.py
+│   ├── main.py
+│   ├── advancedTopics.py
+│   └── myPackage/
+│       ├── __init__.py
+│       └── maths.py
 │
 └── README.md
 ```
@@ -227,7 +236,8 @@ Python-Course/
 * [x] Day 03 Completed
 * [x] Day 04 Completed
 * [x] Day 05 Completed
-* [ ] Day 06
+* [x] Day 06 Completed
+* [ ] Day 07
 
 More updates will be added as I continue my Python journey.
 
