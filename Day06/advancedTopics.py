@@ -295,3 +295,234 @@ print(result)
 # Condition False
 # -> Remove Element
 
+
+# ==========================================================
+# ITERATORS
+# ==========================================================
+
+# Iterator means:
+# An object that returns elements one by one.
+
+# Every Iterator has two methods:
+#
+# __iter__() -> Returns the iterator object itself
+# __next__() -> Returns the next element
+
+
+# ==========================================================
+# BUILT-IN ITERATOR EXAMPLE
+# ==========================================================
+
+numbers = [10, 20, 30]
+
+# Create an iterator from a list
+itr = iter(numbers)
+
+print(next(itr))   # 10
+print(next(itr))   # 20
+print(next(itr))   # 30
+
+# print(next(itr)) # StopIteration -> no more elements
+
+
+# ==========================================================
+# CUSTOM ITERATOR
+# ==========================================================
+
+# We can build our own iterator using a class.
+
+class CountUp:
+
+    def __init__(self, start, end):
+        self.current = start
+        self.end = end
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.current > self.end:
+            raise StopIteration
+        value = self.current
+        self.current += 1
+        return value
+
+
+counter = CountUp(1, 5)
+
+for num in counter:
+    print(num)
+
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+
+
+# ==========================================================
+# SUMMARY
+# ==========================================================
+
+# Iterator
+# -> Returns elements one by one
+
+# iter()
+# -> Creates an iterator
+
+# next()
+# -> Fetches next element
+
+# StopIteration
+# -> Raised when no more elements
+
+# __iter__() + __next__()
+# -> Required for custom iterators
+
+
+# ==========================================================
+# GENERATORS
+# ==========================================================
+
+# Generator means:
+# A function that yields values one at a time
+# instead of returning all values at once.
+
+# Uses yield keyword instead of return.
+
+# Advantage:
+# Memory efficient -> values generated on demand.
+# Does not store all values in memory at once.
+
+
+# ==========================================================
+# BASIC GENERATOR
+# ==========================================================
+
+def count_up(start, end):
+
+    while start <= end:
+        yield start       # Pauses here, returns value
+        start += 1        # Resumes from here next time
+
+
+gen = count_up(1, 5)
+
+print(next(gen))   # 1
+print(next(gen))   # 2
+print(next(gen))   # 3
+
+# Or use a for loop
+for num in count_up(1, 5):
+    print(num)
+
+
+# ==========================================================
+# RETURN VS YIELD
+# ==========================================================
+
+# return
+# -> Function ends, all data returned at once
+
+# yield
+# -> Function pauses, one value returned at a time
+# -> Function resumes from where it paused
+
+
+# ==========================================================
+# GENERATOR EXAMPLE: SQUARES
+# ==========================================================
+
+def squares(n):
+    for i in range(1, n + 1):
+        yield i * i
+
+
+for val in squares(5):
+    print(val)
+
+# Output:
+# 1
+# 4
+# 9
+# 16
+# 25
+
+
+# ==========================================================
+# GENERATOR EXPRESSION
+# ==========================================================
+
+# Like list comprehension but with ()
+# Does not store values in memory.
+
+gen = (num * num for num in range(1, 6))
+
+for val in gen:
+    print(val)
+
+
+# ==========================================================
+# GENERATOR VS LIST — MEMORY COMPARISON
+# ==========================================================
+
+import sys
+
+normal_list = [num * num for num in range(1000)]
+generator   = (num * num for num in range(1000))
+
+print(sys.getsizeof(normal_list))   # Much larger (bytes)
+print(sys.getsizeof(generator))     # Very small (bytes)
+
+# Generator wins when dealing with large data.
+
+
+# ==========================================================
+# REAL LIFE USE CASE OF GENERATORS
+# ==========================================================
+
+# Reading a large file line by line
+# without loading entire file into memory.
+
+def read_large_file(filepath):
+    with open(filepath, "r") as file:
+        for line in file:
+            yield line.strip()
+
+# Used in ML pipelines for large datasets.
+
+
+# ==========================================================
+# SUMMARY
+# ==========================================================
+
+# Generator
+# -> Function with yield
+
+# yield
+# -> Pauses function, returns one value
+
+# Memory Efficient
+# -> Values produced on demand
+
+# Generator Expression
+# -> (expression for item in iterable)
+
+# Use Cases
+# -> Large files
+# -> Infinite sequences
+# -> ML data pipelines
+
+
+# ==========================================================
+# ITERATOR VS GENERATOR — QUICK COMPARISON
+# ==========================================================
+
+# Feature         | Iterator (Class)    | Generator (Function)
+# ----------------|---------------------|---------------------
+# Defined Using   | Class               | Function with yield
+# Methods Needed  | __iter__, __next__  | Only yield
+# Memory          | Manual management   | Auto, lazy loading
+# Code Length     | More verbose        | Short and clean
+# Use When        | Complex logic       | Simple sequences
