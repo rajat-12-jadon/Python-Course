@@ -211,6 +211,52 @@ Files:
 * Improved code organization and reusability.
 * Understood how larger Python applications are structured.
 
+### ✅ Day 07
+
+#### Topics Covered
+
+* Object-Oriented Programming Project
+* Classes and Objects
+* Constructors
+* Class Variables
+* JSON File Handling
+* Data Persistence
+* Authentication using PIN
+* Account Management System
+* CRUD Operations
+
+#### Project
+
+🏦 Bank Management System
+
+#### Features
+
+* Create New Account
+* Generate Unique Account Number
+* Secure PIN Authentication
+* Deposit Money
+* Withdraw Money
+* Check Account Balance
+* View Account Details
+* Update User Information
+* Delete Account
+* Store Data in JSON File
+
+#### Project Files
+
+* bankManagementSystem.py
+* data.json
+* README.md
+
+#### Learning Outcome
+
+* Applied OOP concepts in a real-world project.
+* Learned how to store and manage persistent data using JSON.
+* Implemented authentication using account number and PIN.
+* Built a complete menu-driven banking application.
+* Practiced CRUD operations on user accounts.
+* Improved code organization and project structure.
+
 ---
 
 ## 🎯 Learning Goals
@@ -270,6 +316,11 @@ Python-Course/
 │   └── myPackage/
 │       ├── __init__.py
 │       └── maths.py
+|
+├── Day07/
+│   ├── bankManagementSystem.py
+│   ├── data.json
+│   └── README.md
 │
 └── README.md
 ```
@@ -282,8 +333,6 @@ Python-Course/
 * [x] Day 04 Completed
 * [x] Day 05 Completed
 * [x] Day 06 Completed
-* [ ] Day 07
+* [x] Day 07 Completed
 
-More updates will be added as I continue my Python journey.
-
-⭐ Consistency over intensity. Building one day at a time.
+🚀 Python learning journey completed. Now building projects, solving problems, and growing as a developer.
