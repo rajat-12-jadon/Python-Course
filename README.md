@@ -166,6 +166,51 @@ Features:
 * Applied polymorphism for flexible and scalable code.
 * Learned how dunder methods customize object behavior in Python.
 
+
+
+### ✅ Day 06
+
+#### Topics Covered
+
+* Modules
+* Creating Custom Modules
+* Import Statement
+* `from module import function`
+* Packages
+* `__init__.py`
+* Code Reusability
+* Lambda Functions
+* List Comprehensions
+* `*args` and `**kwargs`
+* Generators
+* Decorators
+* Advanced Python Concepts
+
+#### Practice Files
+
+* calculator.py
+* main.py
+* advancedTopics.py
+
+#### Package
+
+📦 myPackage
+
+Files:
+
+* **init**.py
+* maths.py
+
+#### Learning Outcome
+
+* Learned how to create and use custom modules.
+* Understood the difference between modules and packages.
+* Learned the purpose of `__init__.py`.
+* Practiced importing functions and modules.
+* Explored advanced Python features such as generators, decorators, and lambda functions.
+* Improved code organization and reusability.
+* Understood how larger Python applications are structured.
+
 ---
 
 ## 🎯 Learning Goals
