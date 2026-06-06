@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Rajat Jadon",
+        "Age": 23,
+        "E-Mail": "jadon@gmail.com",
+        "PIN": 2121,
+        "Account Number": 968450995542,
+        "Balance": 0
+    },
+    {
+        "Name": "Priya",
+        "Age": 22,
+        "E-Mail": "priya@gmail.com",
+        "PIN": 1212,
+        "Account Number": 773916751223,
+        "Balance": 0
+    },
+    {
+        "Name": "Samarth Dixit",
+        "Age": 22,
+        "E-Mail": "samarth@gmail.com",
+        "PIN": 1245,
+        "Account Number": 886740186738,
+        "Balance": 9000
+    }
+]
