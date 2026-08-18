@@ -55,7 +55,7 @@ import math
 #         print(i)
 
 # for i in range(1, 21, 1):
-#     if i == 110:
+#     if i == 10:
 #         print("Break statement is executed.")
 #         break
 #     print(i)
